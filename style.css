@@ -1,36 +1,40 @@
-*{
+* {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
-}
-body{
+   }
+   
+   body {
      font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
      background-color: black;
      color: white;
-}
-:root{
-     --primary-padding:7%;
-}
-/* main block with navigation bar start */
-.main{
-
+   }
+   
+   :root {
+     --primary-padding: 7%;
+   }
+   
+   /* Main block with navigation bar start */
+   .main {
      height: 100vh;
-     width: 98vw;
+     width: 100vw;
      background-image: url(images_and_videos/background_img.jpg);
      background-size: cover;
-     background-position: center center ;
+     background-position: center center;
      background-repeat: no-repeat;
      position: relative;
      overflow: hidden;
-}
-.box{
+   }
+   
+   .box {
      width: 100%;
      height: 100vh;
      position: absolute;
-     opacity: 0.70;
+     opacity: 0.7;
      background-color: black;
-}
-.nav{
+   }
+   
+   .nav {
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -39,22 +43,24 @@ body{
      top: 3%;
      width: 100%;
      padding: 0 5%;
-     justify-content: space-between;
-}
-.nav img{
+   }
+   
+   .nav img {
      padding-left: var(--primary-padding);
      height: auto;
      width: auto;
-}
-.nav-buttons{
+   }
+   
+   .nav-buttons {
      padding-right: var(--primary-padding);
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
      align-items: center;
      gap: 10px;
-}
-.main-content{
+   }
+   
+   .main-content {
      width: 100%;
      height: 70%;
      display: flex;
@@ -64,43 +70,49 @@ body{
      color: white;
      margin-top: 12%;
      position: relative;
-}
-.main-content h1{
+   }
+   
+   .main-content h1 {
      font-weight: 900;
      font-size: 56px;
      text-align: center;
-}
-.main-content-p1{
+   }
+   
+   .main-content-p1 {
      font-size: 22px;
      font-weight: 700;
      margin-top: 15px;
      text-align: center;
-}
-.main-content-p2{
+   }
+   
+   .main-content-p2 {
      font-weight: 500;
      font-size: 18px;
      margin-top: 30px;
      line-height: 24px;
      text-align: center;
-}
-.main-input{
+   }
+   
+   .main-input {
      margin-top: 20px;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
      justify-content: center;
      gap: 10px;
-}
-.btn{
-     background-color: #C11119;
-     color: rgb(255, 255, 255);    ;
+   }
+   
+   .btn {
+     background-color: #c11119;
+     color: rgb(255, 255, 255);
      font-weight: bold;
      border: none;
      padding: 8px 12px;
      border-radius: 5px;
      cursor: pointer;
-}
-.language-options{
+   }
+   
+   .language-options {
      font-size: 15px;
      padding: 5px 18px;
      border-radius: 4px;
@@ -108,25 +120,25 @@ body{
      border: 1px solid white;
      color: white;
      cursor: pointer;
-     
-}
-option{
-     background-color: white; 
+   }
+   
+   option {
+     background-color: white;
      color: black;
-}
-option:active{
-     border: 30px solid white;
-}
-.btn-one{
+   }
+   
+   .btn-one {
      font-size: 90%;
      cursor: pointer;
-}
-.btn-two{
+   }
+   
+   .btn-two {
      font-size: 22px;
      padding: 15px 30px;
      cursor: pointer;
-}
-.main-input input{
+   }
+   
+   .main-input input {
      font-size: 18px;
      padding: 15px 30px;
      border-radius: 4px;
@@ -134,9 +146,135 @@ option:active{
      border: 1px solid white;
      color: white;
      width: 450px;
-}
+   }
+   button:hover{
+     background-color: rgb(136, 17, 17);
+   }
+   /* Main block with navigation bar end */
+   
 
-/* main block with navigation bar end */
+   /*makig Responsive to main block start*/
+   @media (max-width: 1200px) {
+     .main-content h1 {
+       font-size: 48px;
+     }
+   
+     .main-content-p1 {
+       font-size: 20px;
+     }
+   
+     .main-content-p2 {
+       font-size: 16px;
+     }
+   
+     .main-input input {
+       width: 400px;
+     }
+   }
+   
+   @media (max-width: 992px) {
+     .main-content h1 {
+       font-size: 40px;
+     }
+   
+     .main-content-p1 {
+       font-size: 18px;
+     }
+   
+     .main-content-p2 {
+       font-size: 14px;
+     }
+   
+     .main-input input {
+       width: 350px;
+       font-size: 16px;
+       padding: 12px 24px;
+     }
+   
+     .btn-two {
+       font-size: 18px;
+       padding: 12px 24px;
+     }
+   }
+   
+   @media (max-width: 768px) {
+     .main-content h1 {
+       font-size: 32px;
+     }
+   
+     .main-content-p1 {
+       font-size: 16px;
+     }
+   
+     .main-content-p2 {
+       font-size: 14px;
+     }
+   
+     .main-input input {
+       width: 300px;
+       font-size: 14px;
+       padding: 10px 20px;
+     }
+   
+     .btn-two {
+       font-size: 16px;
+       padding: 10px 20px;
+     }
+   
+     .nav img {
+       padding-left: 5%;
+     }
+   
+     .nav-buttons {
+       padding-right: 5%;
+     }
+   }
+   
+   @media (max-width: 576px) {
+     .main-content h1 {
+       font-size: 24px;
+     }
+   
+     .main-content-p1 {
+       font-size: 14px;
+     }
+   
+     .main-content-p2 {
+       font-size: 12px;
+     }
+   
+     .main-input {
+       flex-direction: column;
+       gap: 15px;
+     }
+   
+     .main-input input {
+       width: 100%;
+       max-width: 300px;
+       font-size: 14px;
+       padding: 10px 20px;
+     }
+   
+     .btn-two {
+       width: 100%;
+       max-width: 300px;
+       font-size: 14px;
+       padding: 10px 20px;
+     }
+   
+     .nav {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 10px;
+     }
+   
+     .nav img {
+       padding-left: 0;
+     }
+   
+     .nav-buttons {
+       padding-right: 0;
+     }
 
-
- 
+   }
+   /* makig Responsive to main block end */
