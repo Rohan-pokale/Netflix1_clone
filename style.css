@@ -138,12 +138,5 @@ option:active{
 
 /* main block with navigation bar end */
 
-.curve {
-     width: 200px;
-     height: 100px;
-     background-color: blue;
-     border-radius: 50% / 100%;
-     border-top-left-radius: 0;
-     border-top-right-radius: 0;
-}
+
  
